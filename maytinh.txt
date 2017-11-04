@@ -1,0 +1,123 @@
+import UIKit
+
+class ViewController: UIViewController {
+    var so1:Int!
+    var so2:Int!
+    var daupheptinh:String!
+
+    @IBOutlet weak var txtKetQua: UITextField!
+    
+    @IBAction func nutcong(sender: AnyObject) {
+        var s1:String=txtKetQua.text
+        so1=s1.toInt()
+        txtKetQua.text=""
+        daupheptinh = "+"
+    
+    }
+    
+    @IBAction func nuttru(sender: AnyObject) {
+        var s1:String=txtKetQua.text
+        so1=s1.toInt()
+        txtKetQua.text=""
+        daupheptinh = "-"
+    }
+    
+    @IBAction func nutnhan(sender: AnyObject) {
+        var s1:String=txtKetQua.text
+        so1=s1.toInt()
+        txtKetQua.text=""
+        daupheptinh = "*"
+    }
+    
+    @IBAction func nutchia(sender: AnyObject) {
+        var s1:String=txtKetQua.text
+        so1=s1.toInt()
+        txtKetQua.text=""
+        daupheptinh = "/"
+    }
+    
+    @IBAction func nutbang(sender: AnyObject) {
+        var s2:String = txtKetQua.text
+        so2 = s2.toInt()
+        var kq:Int = 0
+        if daupheptinh=="+"
+        {
+            kq = so1 + so2
+            
+        }
+        else if daupheptinh=="-"
+        {
+            kq = so1 - so2
+            
+        }
+        else if daupheptinh=="*"
+        {
+            kq = so1 * so2
+            
+        }
+        else
+        {
+        kq = so1 / so2
+        }
+        txtKetQua.text=String(kq)
+    }
+    
+    @IBAction func nutxoa(sender: AnyObject) {
+        txtKetQua.text = " "
+    }
+    
+    @IBAction func nut0(sender: AnyObject) {
+        var kq:String = txtKetQua.text
+        kq = kq + "0"
+        txtKetQua.text = kq
+    }
+    
+    @IBAction func nut1(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "1"
+        txtKetQua.text = kq
+    }
+    
+    @IBAction func nut2(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "2"
+        txtKetQua.text = kq
+    }
+    @IBAction func nut3(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "3"
+        txtKetQua.text = kq
+    }
+    @IBAction func nut4(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "4"
+        txtKetQua.text = kq
+    }
+    @IBAction func nut5(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "5"
+        txtKetQua.text = kq
+    }
+    @IBAction func nut6(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "6"
+        txtKetQua.text = kq
+    }
+    @IBAction func nut7(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "7"
+        txtKetQua.text = kq
+    }
+    
+    @IBAction func nut8(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "8"
+        txtKetQua.text = kq
+    }
+    
+    @IBAction func nut9(sender: AnyObject) {var kq:String = txtKetQua.text
+        kq = kq + "9"
+        txtKetQua.text = kq
+    }
+       override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    override func didReceiveMemoryWarning(){
+    super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+}
+}
+
